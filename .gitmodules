@@ -1,6 +1,6 @@
 [submodule "hardware-video-decoder"]
 	path = hardware-video-decoder
-	url = https://github.com/bmegli/hardware-video-decoder.git
+	url = https://github.com/CitizenOneX/hardware-video-decoder.git
 [submodule "minimal-latency-streaming-protocol"]
 	path = minimal-latency-streaming-protocol
-	url = https://github.com/bmegli/minimal-latency-streaming-protocol.git
+	url = https://github.com/CitizenOneX/minimal-latency-streaming-protocol.git
