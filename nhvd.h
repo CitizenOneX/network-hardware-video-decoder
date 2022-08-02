@@ -191,7 +191,7 @@ int nhvd_receive(struct nhvd *n, AVFrame *frames[]);
  *
  * The ownership of FFmpeg AVFrame* set remains with the library and
  * is valid only until next call to nhvd_receive so:
- * - consume it immidiately
+ * - consume it immediately
  * - or reference the data with av_frame_ref
  * - or copy (not recommended)
  *
@@ -206,10 +206,10 @@ int nhvd_receive(struct nhvd *n, AVFrame *frames[]);
  *
  * The ownership of raws nhvd_frame set data remains with the library and
  * is valid only until next call to nhvd_recive so:
- * - consume it immidiately
+ * - consume it immediately
  * - or copy if necessary
  *
- * If the function returns NHVD_TIMEOUT you may immidiately proceed with
+ * If the function returns NHVD_TIMEOUT you may immediately proceed with
  * next nhvd_receive. The hardware is flushed and network prepared for new
  * streaming sequence.
  *
