@@ -101,9 +101,6 @@ int nhvd_receive_all(struct nhvd *n, AVFrame *frames[], struct nhvd_frame *raws)
 		return NHVD_ERROR_MSG("error while receiving frame");
 	}
 
-	// TODO remove once frames are being received properly
-	fprintf(stderr, "Packet received in nhvd. Subframe sizes: 0:%d, 1:%d, 2:%d\n", streamer_frame[0].size, streamer_frame[1].size, streamer_frame[2].size);
-
 	for(int i=0;i<n->hardware_decoders_size;++i)
 	{
 		packets[i].data = streamer_frame[i].data;
